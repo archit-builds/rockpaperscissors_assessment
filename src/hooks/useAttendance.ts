@@ -1,5 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
-import { fetchAttendanceForEmployee, fetchAttendanceForDate } from '@/api/attendanceApi';
+import { fetchAttendanceForEmployee, fetchAttendanceForDate, fetchAllAttendance } from '@/api/attendanceApi';
+
+export function useAllAttendance() {
+  return useQuery({
+    queryKey: ['attendance', 'all'],
+    queryFn: fetchAllAttendance,
+  });
+}
 
 export function useMyAttendance(employeeId: string | undefined) {
   return useQuery({
