@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* Class-based dark mode (toggled manually, not by OS preference) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Type */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Brand palette — deliberate, not Tailwind defaults */
+  --color-ink-950: #0b0f19;
+  --color-ink-900: #10172a;
+  --color-ink-800: #1b2438;
+  --color-ink-700: #2a3450;
+
+  --color-canvas: #f5f6f8;
+  --color-canvas-dark: #0b0f19;
+
+  --color-surface: #ffffff;
+  --color-surface-dark: #131a2b;
+
+  --color-line: #e4e7ec;
+  --color-line-dark: #232b3f;
+
+  --color-muted: #667085;
+  --color-muted-dark: #8b93a7;
+
+  --color-text: #0f1729;
+  --color-text-dark: #e7e9ee;
+
+  /* Single confident accent: deep teal */
+  --color-accent-50: #edf9f7;
+  --color-accent-400: #1fa39a;
+  --color-accent-500: #0e7c86;
+  --color-accent-600: #0a636b;
+
+  /* Status */
+  --color-signal-amber: #b5541a;
+  --color-signal-amber-bg: #fbeee3;
+  --color-signal-green: #157f4a;
+  --color-signal-green-bg: #e7f6ee;
+  --color-signal-red: #b3261e;
+  --color-signal-red-bg: #fbeae9;
+  --color-signal-blue: #2457c5;
+  --color-signal-blue-bg: #eaf0fd;
+
+  --radius-card: 10px;
+  --radius-control: 7px;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    color-scheme: light dark;
+  }
+
+  body {
+    @apply bg-canvas text-text font-sans antialiased;
+  }
+
+  .dark body {
+    @apply bg-canvas-dark text-text-dark;
+  }
+
+  * {
+    @apply border-line;
+  }
+
+  .dark * {
+    @apply border-line-dark;
+  }
+
+  /* Tabular numerals for every data figure — the app's quiet signature */
+  .figure {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: var(--color-accent-500);
+    color: white;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent-500);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.08em] text-muted dark:text-muted-dark;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: var(--color-line);
+    border-radius: 999px;
+  }
+  .dark .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: var(--color-line-dark);
+  }
+}

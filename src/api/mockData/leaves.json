@@ -1,0 +1,102 @@
+[
+  {
+    "id": "lv-001",
+    "employeeId": "emp-01",
+    "startDate": "2026-06-14",
+    "endDate": "2026-06-14",
+    "type": "sick",
+    "reason": "Fever and body ache, need rest to recover.",
+    "status": "rejected",
+    "appliedOn": "2026-06-10"
+  },
+  {
+    "id": "lv-002",
+    "employeeId": "emp-02",
+    "startDate": "2026-06-20",
+    "endDate": "2026-06-21",
+    "type": "casual",
+    "reason": "Family function out of town, traveling with parents.",
+    "status": "approved",
+    "appliedOn": "2026-06-16"
+  },
+  {
+    "id": "lv-003",
+    "employeeId": "emp-03",
+    "startDate": "2026-06-25",
+    "endDate": "2026-06-27",
+    "type": "earned",
+    "reason": "Planned vacation with family, booked in advance.",
+    "status": "approved",
+    "appliedOn": "2026-06-21"
+  },
+  {
+    "id": "lv-004",
+    "employeeId": "emp-06",
+    "startDate": "2026-06-29",
+    "endDate": "2026-06-29",
+    "type": "unpaid",
+    "reason": "Personal errand that needs to be handled in person.",
+    "status": "approved",
+    "appliedOn": "2026-06-25"
+  },
+  {
+    "id": "lv-005",
+    "employeeId": "emp-07",
+    "startDate": "2026-07-01",
+    "endDate": "2026-07-02",
+    "type": "sick",
+    "reason": "Recovering from a minor surgery, doctor advised rest.",
+    "status": "rejected",
+    "appliedOn": "2026-06-27"
+  },
+  {
+    "id": "lv-006",
+    "employeeId": "emp-10",
+    "startDate": "2026-07-06",
+    "endDate": "2026-07-08",
+    "type": "casual",
+    "reason": "Moving to a new apartment, need a couple of days.",
+    "status": "pending",
+    "appliedOn": "2026-07-02"
+  },
+  {
+    "id": "lv-007",
+    "employeeId": "emp-11",
+    "startDate": "2026-07-10",
+    "endDate": "2026-07-10",
+    "type": "earned",
+    "reason": "Attending a family wedding in my hometown.",
+    "status": "approved",
+    "appliedOn": "2026-07-06"
+  },
+  {
+    "id": "lv-008",
+    "employeeId": "emp-13",
+    "startDate": "2026-07-14",
+    "endDate": "2026-07-15",
+    "type": "unpaid",
+    "reason": "Not feeling well, seasonal flu going around the office.",
+    "status": "pending",
+    "appliedOn": "2026-07-10"
+  },
+  {
+    "id": "lv-009",
+    "employeeId": "emp-15",
+    "startDate": "2026-07-19",
+    "endDate": "2026-07-21",
+    "type": "sick",
+    "reason": "Fever and body ache, need rest to recover.",
+    "status": "pending",
+    "appliedOn": "2026-07-15"
+  },
+  {
+    "id": "lv-010",
+    "employeeId": "emp-17",
+    "startDate": "2026-07-24",
+    "endDate": "2026-07-24",
+    "type": "casual",
+    "reason": "Family function out of town, traveling with parents.",
+    "status": "approved",
+    "appliedOn": "2026-07-20"
+  }
+]
