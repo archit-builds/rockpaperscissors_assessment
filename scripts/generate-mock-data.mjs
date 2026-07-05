@@ -2,8 +2,6 @@
 // Output is committed as static JSON — the app itself never re-runs this.
 import { writeFileSync } from 'node:fs';
 
-const DEPARTMENTS = ['Engineering', 'Design', 'Sales', 'People Ops'];
-
 const EMPLOYEES = [
   { name: 'Aditi Rao', role: 'Frontend Engineer', department: 'Engineering', color: '#0E7C86' },
   { name: 'Karan Mehta', role: 'Backend Engineer', department: 'Engineering', color: '#2457C5' },
