@@ -84,6 +84,13 @@ browser here, which is fine for a take-home but exposes the API key
 client-side. In a real deployment this call should be proxied through a
 lightweight backend endpoint that holds the key server-side.
 
+## AI Tools Used
+
+- Claude (Anthropic) was used as a coding assistant to scaffold and build
+  this application.
+- Groq's `llama-3.3-70b-versatile` model powers the in-app AI announcement
+  summarizer feature.
+
 ## Assumptions
 
 - The logged-in user is hardcoded (Archit Srivastava, `emp-01`) — there's no auth flow.
