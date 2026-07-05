@@ -1,4 +1,4 @@
-# Nimbus HR — Employee Dashboard
+# RPS.studio — Employee Dashboard
 
 A minimalist, professional Employee Dashboard built for the Junior Frontend Developer take-home assignment. Covers attendance tracking, leave management, a searchable team directory, and company announcements with an AI-powered summarizer.
 
@@ -20,18 +20,18 @@ npm run generate-mock-data
 
 ### Environment variables
 
-| Variable | Description |
-|---|---|
+| Variable            | Description                                                                                                                                                                                                                               |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `VITE_GROQ_API_KEY` | API key for [Groq](https://console.groq.com/keys), used by the AI announcement summarizer (`llama-3.3-70b-versatile`). The app runs fine without it — the summarizer button will show a graceful "unavailable" state instead of crashing. |
 
 ### Scripts
 
-| Command | Description |
-|---|---|
-| `npm run dev` | Start the dev server |
-| `npm run build` | Type-check and build for production |
+| Command           | Description                          |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Start the dev server                 |
+| `npm run build`   | Type-check and build for production  |
 | `npm run preview` | Preview the production build locally |
-| `npm run lint` | Run oxlint |
+| `npm run lint`    | Run oxlint                           |
 
 ## Tech Stack
 
@@ -86,7 +86,7 @@ lightweight backend endpoint that holds the key server-side.
 
 ## Assumptions
 
-- The logged-in user is hardcoded (Aditi Rao, `emp-01`) — there's no auth flow.
+- The logged-in user is hardcoded (Archit Srivastava, `emp-01`) — there's no auth flow.
 - Leave balances (Sick: 10, Casual: 8, Earned: 15) are fixed annual allotments;
   "used" days are derived from approved leave requests in the mock data.
 - The mock API is in-memory only — submitted leave requests persist for the
@@ -109,12 +109,6 @@ lightweight backend endpoint that holds the key server-side.
   bundle small; this was added once the bundle-size warning showed up during
   the build, rather than prematurely optimizing.
 
-## AI Tools Used
-
-- Claude (Anthropic) was used as a coding assistant to scaffold and build
-  this application.
-- Groq's `llama-3.3-70b-versatile` model powers the in-app AI announcement
-  summarizer feature.
 
 ## Deployment
 
